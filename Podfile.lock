@@ -1,0 +1,16 @@
+PODS:
+  - SwiftLint (0.35.0)
+
+DEPENDENCIES:
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
+
+PODFILE CHECKSUM: e4e1b087715108f0ad16a30b4b959d41885e9670
+
+COCOAPODS: 1.7.5
