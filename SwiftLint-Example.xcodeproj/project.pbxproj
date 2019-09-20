@@ -12,8 +12,24 @@
 		D999613D2333B7E90070E494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D999613B2333B7E90070E494 /* Main.storyboard */; };
 		D999613F2333B7EA0070E494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D999613E2333B7EA0070E494 /* Assets.xcassets */; };
 		D99961422333B7EA0070E494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99961402333B7EA0070E494 /* LaunchScreen.storyboard */; };
+		D999614A2333C7840070E494 /* Pods_SwiftLint_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C954C985EEB07131299091EF /* Pods_SwiftLint_Example.framework */; };
+		D999614B2333C7840070E494 /* Pods_SwiftLint_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C954C985EEB07131299091EF /* Pods_SwiftLint_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F28255BE3CE1B093F59F6F51 /* Pods_SwiftLint_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C954C985EEB07131299091EF /* Pods_SwiftLint_Example.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D999614C2333C7840070E494 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D999614B2333C7840070E494 /* Pods_SwiftLint_Example.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		30B677EE9B8980A21CB1D789 /* Pods-SwiftLint-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLint-Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftLint-Example/Pods-SwiftLint-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D999614A2333C7840070E494 /* Pods_SwiftLint_Example.framework in Frameworks */,
 				F28255BE3CE1B093F59F6F51 /* Pods_SwiftLint_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,7 +71,6 @@
 				30B677EE9B8980A21CB1D789 /* Pods-SwiftLint-Example.debug.xcconfig */,
 				69F6C95F3A34ADCCB63173F7 /* Pods-SwiftLint-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +116,8 @@
 				D99961302333B7E90070E494 /* Sources */,
 				D99961312333B7E90070E494 /* Frameworks */,
 				D99961322333B7E90070E494 /* Resources */,
+				D99961492333B95C0070E494 /* SwiftLint */,
+				D999614C2333C7840070E494 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +196,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D99961492333B95C0070E494 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -333,16 +369,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30B677EE9B8980A21CB1D789 /* Pods-SwiftLint-Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DVHX5WRRH;
 				INFOPLIST_FILE = "SwiftLint-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mustafagunes.swiftlint.SwiftLint-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mustafagunes.swiftlint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -352,16 +393,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69F6C95F3A34ADCCB63173F7 /* Pods-SwiftLint-Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DVHX5WRRH;
 				INFOPLIST_FILE = "SwiftLint-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mustafagunes.swiftlint.SwiftLint-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mustafagunes.swiftlint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

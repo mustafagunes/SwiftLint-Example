@@ -1,0 +1,55 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  - SwiftLintDemo/AppDelegate.swift
+  - SwiftLintDemoTests
+  - SwiftLintDemoUITests
+
+disabled_rules:
+  - trailing_whitespace
+
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+
+custom_rules: # example taken from https://habr.com/company/tinkoff/blog/317892/
+  id_suffix_naming:
+    name: "Wrong name"
+    regex: "(example)"
+    match_kinds:
+      - comment
+      - identifier
+    message: "Use 'Example' instead 'eXample'"
+    severity: error
+
+invalid_mark_format:
+    name: "Invalid MARK Format"
+    regex: '(?m-s)(\/\/[\s]*?MARK(?!(\:[\s]{1}\-[\s]{1}){1}))'
+    message: "Use format: MARK: - Your Info"
+    severity: warning
+
+lowercase_constants:
+    name: "Lowercase Constants"
+    regex: '[ \t]let[ \t]*[A-Z][\w]*[ \t]*(=|:)'
+    message: "Constants should begin with a lowercase character."
+    severity: warning
+    match_kinds:
+      - argument
+      - attribute.builtin
+      - attribute.id
+      - buildconfig.id
+      - buildconfig.keyword
+      - comment
+      - comment.mark
+      - comment.url
+      - doccomment
+      - doccomment.field
+      - identifier
+      - keyword
+      - number
+      - objectliteral
+      - parameter
+      - placeholder
+      - typeidentifier
+
+file_length:
+  warning: 40
+  error: 50

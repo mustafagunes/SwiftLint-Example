@@ -7,5 +7,4 @@ target 'SwiftLint-Example' do
 
   # Pods for SwiftLint-Example
 
-	pod 'SwiftLint'
 end
