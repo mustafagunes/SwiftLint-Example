@@ -1,16 +1,45 @@
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Pods
-  - SwiftLintDemo/AppDelegate.swift
-  - SwiftLintDemoTests
-  - SwiftLintDemoUITests
+  - SwiftLint-Example/AppDelegate.swift
 
+
+# Disable Rules
 disabled_rules:
+  - todo
   - trailing_whitespace
 
-opt_in_rules: # some rules are only opt-in
-  - empty_count
 
-custom_rules: # example taken from https://habr.com/company/tinkoff/blog/317892/
+# Max line length
+line_length: 130
+
+
+# Max function body
+function_body_length: 5
+
+
+# Max - Min
+file_length:
+  warning: 20
+  error: 50
+
+
+# Function parameter count
+function_parameter_count:
+  warning: 2
+  error: 3
+
+
+# Nested complex code
+cyclomatic_complexity:
+- 2 # warning
+- 3 # error
+
+
+# Custom Rule
+# ex: let example = 0
+custom_rules:
+  
+  # Specific name - key ... regex
   id_suffix_naming:
     name: "Wrong name"
     regex: "(example)"
@@ -20,12 +49,35 @@ custom_rules: # example taken from https://habr.com/company/tinkoff/blog/317892/
     message: "Use 'Example' instead 'eXample'"
     severity: error
 
+  # Force ssl protocol
+  # ex: let apiUrl = "http://github.com"
+  force_https:
+     name: "Force HTTPS over HTTP"
+     regex: "((?i))http(?!s)"
+     match_kinds: string
+     message: "HTTPS should be used instead of HTTP"
+     severity: warning
+
+  # Capitalize first word in comment 
+  # ex: // swiftlint:disable empty_count
+  comments_capitalized_ignore_possible_code:
+    name: "Capitalize First Word In Comment"
+    regex: "(^ +// +(?!swiftlint)[a-z]+)"
+    message: "The first word of a comment should be capitalized"
+    severity: warning
+
+
+# Mark indentation
+# ex: // MARK : -
 invalid_mark_format:
     name: "Invalid MARK Format"
     regex: '(?m-s)(\/\/[\s]*?MARK(?!(\:[\s]{1}\-[\s]{1}){1}))'
     message: "Use format: MARK: - Your Info"
     severity: warning
 
+
+# Variable Name lowercase letter
+# ex: let Deneme = "API_KEY"
 lowercase_constants:
     name: "Lowercase Constants"
     regex: '[ \t]let[ \t]*[A-Z][\w]*[ \t]*(=|:)'
@@ -33,23 +85,10 @@ lowercase_constants:
     severity: warning
     match_kinds:
       - argument
-      - attribute.builtin
-      - attribute.id
-      - buildconfig.id
-      - buildconfig.keyword
-      - comment
       - comment.mark
       - comment.url
-      - doccomment
-      - doccomment.field
       - identifier
-      - keyword
-      - number
-      - objectliteral
-      - parameter
-      - placeholder
       - typeidentifier
 
-file_length:
-  warning: 40
-  error: 50
+
+reporter: "html"

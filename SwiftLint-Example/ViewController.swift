@@ -10,20 +10,50 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let itemId = 0
+    let aaaaabbbbbcccccccllllllssss = "aaaa"
+    
+    let apiUrl = "http://github.com"
+    
+    var id = 1
     
     let example = 0
     
-    // MARK: -
+    let Deneme = "API_KEY"
+    
+    // MARK: - aa
+    
+    // TODO: the thing todo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        if apiUrl == Deneme {
+            if apiUrl == Deneme {
+                if apiUrl == Deneme {
+                    if apiUrl == Deneme {
+                        
+                    }
+                }
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        for name in 0..<4  {
+            for name in 0..<4  {
+                for name in 0..<4  {
+                }
+            }
+        }
+    }
+    
+    func parameterMethod(param1: String, param2: Int, param3: String) {
+        print(param1)
+    }
+    
+    func parameterMethod2(param1: String, param2: Int, param3: String, param4: String) {
+        print(param1)
     }
     
     // swiftlint:disable empty_count
@@ -36,6 +66,19 @@ class ViewController: UIViewController {
         }
         
         return true
+    }
+    
+    // ex comment
+    func exMethod() {
+        print(1)
+        print(1)
+        print(1)
+        print(1)
+        print(1)
+        print(1)
+        print(1)
+        print(1)
+        print(1)
     }
     // swiftlint:enable empty_count
     
@@ -56,5 +99,7 @@ class ViewController: UIViewController {
     func a () {
         print("d")
     }
+    
+    
 }
 
