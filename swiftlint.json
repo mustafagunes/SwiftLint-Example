@@ -1,0 +1,173 @@
+[
+  {
+    "character" : 19,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 15,
+    "reason" : "HTTPS should be used instead of HTTP",
+    "rule_id" : "force_https",
+    "severity" : "Warning",
+    "type" : "Force HTTPS over HTTP"
+  },
+  {
+    "character" : 9,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 19,
+    "reason" : "Use 'Example' instead 'eXample'",
+    "rule_id" : "id_suffix_naming",
+    "severity" : "Error",
+    "type" : "Wrong name"
+  },
+  {
+    "character" : 1,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 71,
+    "reason" : "The first word of a comment should be capitalized",
+    "rule_id" : "comments_capitalized_ignore_possible_code",
+    "severity" : "Warning",
+    "type" : "Capitalize First Word In Comment"
+  },
+  {
+    "character" : 14,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 27,
+    "reason" : "Function should have complexity 2 or less: currently complexity equals 4",
+    "rule_id" : "cyclomatic_complexity",
+    "severity" : "Error",
+    "type" : "Cyclomatic Complexity"
+  },
+  {
+    "character" : 14,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 40,
+    "reason" : "Function should have complexity 2 or less: currently complexity equals 3",
+    "rule_id" : "cyclomatic_complexity",
+    "severity" : "Warning",
+    "type" : "Cyclomatic Complexity"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 105,
+    "reason" : "File should contain 20 lines or less: currently contains 105",
+    "rule_id" : "file_length",
+    "severity" : "Error",
+    "type" : "File Line Length"
+  },
+  {
+    "character" : 5,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 72,
+    "reason" : "Function body should span 5 lines or less excluding comments and whitespace: currently spans 9 lines",
+    "rule_id" : "function_body_length",
+    "severity" : "Warning",
+    "type" : "Function Body Length"
+  },
+  {
+    "character" : 5,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 51,
+    "reason" : "Function should have 2 parameters or less: it currently has 3",
+    "rule_id" : "function_parameter_count",
+    "severity" : "Warning",
+    "type" : "Function Parameter Count"
+  },
+  {
+    "character" : 5,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 55,
+    "reason" : "Function should have 2 parameters or less: it currently has 4",
+    "rule_id" : "function_parameter_count",
+    "severity" : "Error",
+    "type" : "Function Parameter Count"
+  },
+  {
+    "character" : 5,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 17,
+    "reason" : "Variable name should be between 3 and 40 characters long: 'id'",
+    "rule_id" : "identifier_name",
+    "severity" : "Warning",
+    "type" : "Identifier Name"
+  },
+  {
+    "character" : 5,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 21,
+    "reason" : "Variable name should start with a lowercase character: 'Deneme'",
+    "rule_id" : "identifier_name",
+    "severity" : "Error",
+    "type" : "Identifier Name"
+  },
+  {
+    "character" : 5,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 23,
+    "reason" : "MARK comment should be in valid format. e.g. '\/\/ MARK: ...' or '\/\/ MARK: - ...'",
+    "rule_id" : "mark",
+    "severity" : "Warning",
+    "type" : "Mark"
+  },
+  {
+    "character" : 28,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 43,
+    "reason" : "Opening braces should be preceded by a single space and on the same line as the declaration.",
+    "rule_id" : "opening_brace",
+    "severity" : "Warning",
+    "type" : "Opening Brace Spacing"
+  },
+  {
+    "character" : 32,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 44,
+    "reason" : "Opening braces should be preceded by a single space and on the same line as the declaration.",
+    "rule_id" : "opening_brace",
+    "severity" : "Warning",
+    "type" : "Opening Brace Spacing"
+  },
+  {
+    "character" : 36,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 45,
+    "reason" : "Opening braces should be preceded by a single space and on the same line as the declaration.",
+    "rule_id" : "opening_brace",
+    "severity" : "Warning",
+    "type" : "Opening Brace Spacing"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 105,
+    "reason" : "Files should have a single trailing newline.",
+    "rule_id" : "trailing_newline",
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 89,
+    "reason" : "Limit vertical whitespace to a single empty line. Currently 2.",
+    "rule_id" : "vertical_whitespace",
+    "severity" : "Warning",
+    "type" : "Vertical Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 94,
+    "reason" : "Limit vertical whitespace to a single empty line. Currently 2.",
+    "rule_id" : "vertical_whitespace",
+    "severity" : "Warning",
+    "type" : "Vertical Whitespace"
+  },
+  {
+    "character" : null,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 103,
+    "reason" : "Limit vertical whitespace to a single empty line. Currently 2.",
+    "rule_id" : "vertical_whitespace",
+    "severity" : "Warning",
+    "type" : "Vertical Whitespace"
+  }
+]

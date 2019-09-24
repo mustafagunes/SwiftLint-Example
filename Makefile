@@ -8,6 +8,23 @@ COCOAPODS := $(shell command -v pod 2> /dev/null)
 default: setup
 
 
+# SwiftLint Report
+linter_html:
+	$(shell swiftlint lint --reporter html > swiftlint.html)
+	$(shell open swiftlint.html)
+
+linter_json:
+	$(shell swiftlint lint --reporter json > swiftlint.json)
+	$(shell open swiftlint.json)
+
+linter_emoji:
+	$(shell swiftlint lint --reporter emoji > swiftlint.txt)
+	$(shell open swiftlint.txt)
+
+linter_clean:
+	rm -rf swiftlint.txt swiftlint.json swiftlint.html
+
+
 # Check if Ruby is installed
 check_for_ruby:
 	$(info Checking for Ruby ...)

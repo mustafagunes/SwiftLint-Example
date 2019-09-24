@@ -1,0 +1,20 @@
+/Users/mustafagunes/Desktop/GITHUB/MyProject/SwiftLint-Example/SwiftLint-Example/ViewController.swift
+⛔️ Line 105: File should contain 20 lines or less: currently contains 105
+⛔️ Line 55: Function should have 2 parameters or less: it currently has 4
+⛔️ Line 27: Function should have complexity 2 or less: currently complexity equals 4
+⛔️ Line 21: Variable name should start with a lowercase character: 'Deneme'
+⛔️ Line 19: Use 'Example' instead 'eXample'
+⚠️ Line 105: Files should have a single trailing newline.
+⚠️ Line 103: Limit vertical whitespace to a single empty line. Currently 2.
+⚠️ Line 94: Limit vertical whitespace to a single empty line. Currently 2.
+⚠️ Line 89: Limit vertical whitespace to a single empty line. Currently 2.
+⚠️ Line 72: Function body should span 5 lines or less excluding comments and whitespace: currently spans 9 lines
+⚠️ Line 71: The first word of a comment should be capitalized
+⚠️ Line 51: Function should have 2 parameters or less: it currently has 3
+⚠️ Line 45: Opening braces should be preceded by a single space and on the same line as the declaration.
+⚠️ Line 44: Opening braces should be preceded by a single space and on the same line as the declaration.
+⚠️ Line 43: Opening braces should be preceded by a single space and on the same line as the declaration.
+⚠️ Line 40: Function should have complexity 2 or less: currently complexity equals 3
+⚠️ Line 23: MARK comment should be in valid format. e.g. '// MARK: ...' or '// MARK: - ...'
+⚠️ Line 17: Variable name should be between 3 and 40 characters long: 'id'
+⚠️ Line 15: HTTPS should be used instead of HTTP

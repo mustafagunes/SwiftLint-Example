@@ -89,6 +89,3 @@ lowercase_constants:
       - comment.url
       - identifier
       - typeidentifier
-
-
-reporter: "html"
