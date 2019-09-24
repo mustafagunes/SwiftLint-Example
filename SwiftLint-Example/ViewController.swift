@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let aaaaabbbbbcccccccllllllssss = "aaaa"
+    let orderModelForRetailCustomers = ""
     
     let apiUrl = "http://github.com"
     
@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     let example = 0
     
     let Deneme = "API_KEY"
+    
+    let orderDetail :String! = nil
+    
+    let dictionary: [String : String] = ["a":"b"]
     
     // MARK : - aa
     
@@ -56,8 +60,10 @@ class ViewController: UIViewController {
         print(param1)
     }
     
-    // swiftlint:disable empty_count
     func checkIfArrayIsEmpty() -> Bool {
+        
+        let string = "1"
+        let _ = (string as! NSString).integerValue
         
         let testArray = [1, 2, 3]
         
@@ -86,7 +92,7 @@ class ViewController: UIViewController {
         print("d")
     }
     
-    
+
     func c () {
         print("d")
     }
