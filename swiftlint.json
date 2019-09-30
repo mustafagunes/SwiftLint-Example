@@ -27,15 +27,6 @@
     "type" : "Colon"
   },
   {
-    "character" : 19,
-    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
-    "line" : 15,
-    "reason" : "HTTPS should be used instead of HTTP",
-    "rule_id" : "force_https",
-    "severity" : "Warning",
-    "type" : "Force HTTPS over HTTP"
-  },
-  {
     "character" : 1,
     "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
     "line" : 77,
@@ -43,6 +34,15 @@
     "rule_id" : "comments_capitalized_ignore_possible_code",
     "severity" : "Warning",
     "type" : "Capitalize First Word In Comment"
+  },
+  {
+    "character" : 19,
+    "file" : "\/Users\/mustafagunes\/Desktop\/GITHUB\/MyProject\/SwiftLint-Example\/SwiftLint-Example\/ViewController.swift",
+    "line" : 15,
+    "reason" : "HTTPS should be used instead of HTTP",
+    "rule_id" : "force_https",
+    "severity" : "Warning",
+    "type" : "Force HTTPS over HTTP"
   },
   {
     "character" : 9,

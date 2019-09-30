@@ -9,17 +9,9 @@ default: setup
 
 
 # SwiftLint Report
-linter_html:
-	$(shell swiftlint lint --reporter html > swiftlint.html)
-	$(shell open swiftlint.html)
-
-linter_json:
-	$(shell swiftlint lint --reporter json > swiftlint.json)
-	$(shell open swiftlint.json)
-
-linter_emoji:
-	$(shell swiftlint lint --reporter emoji > swiftlint.txt)
-	$(shell open swiftlint.txt)
+linter_report:
+	$(shell chmod +x linter.sh)
+	$(shell ./linter.sh)
 
 linter_clean:
 	rm -rf swiftlint.txt swiftlint.json swiftlint.html
