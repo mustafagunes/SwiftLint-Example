@@ -1,3 +1,7 @@
+#!/bin/sh
+# Mustafa GUNES
+# gunes149@gmail.com
+
 PS3='Please select reporting type: '
 options=("Html" "Json" "Emoji" "Quit")
 select opt in "${options[@]}"
